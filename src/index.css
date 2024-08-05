@@ -1,3 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('./assets/hero_img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: 100%;
+  margin: 0;
+  color: #F9FAF8;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+button{
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  inline-size: 80%;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  body{
+    block-size: 100vh;
+  }
+
+  .container {
+    inline-size: 90%;
+  }
+}
